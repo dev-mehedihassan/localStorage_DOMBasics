@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DOM & LocalStorage Basics</title>
+    <!-- ==== CSS Style Link Start ==== -->
+    <link rel="stylesheet" href="./css/style.css" />
+    <!-- ==== CSS Style Link End ==== -->
+  </head>
+  <body>
+    <h1 id="title">DOM & LocalStorage Basics</h1>
+
+    <!-- 1. Change Text -->
+    <section>
+      <h2>1. Change Text</h2>
+      <p id="text">Original Text</p>
+      <button onclick="changeText()">Change Text</button>
+    </section>
+
+    <!-- 2. Show / Hide Password -->
+    <section>
+      <h2>2. Show / Hide Password</h2>
+      <input type="password" id="password" placeholder="Enter password" />
+      <button id="showHideBtn" onclick="showPassword()">Show</button>
+    </section>
+
+    <!-- 3. Get Input Value -->
+    <section>
+      <h2>3. Get Input Value</h2>
+      <input type="text" id="name" placeholder="Enter your name" />
+      <button onclick="showName()">Submit</button>
+      <p id="nameResult"></p>
+    </section>
+
+    <!-- 4. Change Color -->
+    <section>
+      <h2>4. Change Background Color</h2>
+      <button onclick="changeColor('red')">Red</button>
+      <button onclick="changeColor('green')">Green</button>
+      <button onclick="changeColor('blue')">Blue</button>
+    </section>
+
+    <!-- 5. Hide / Show Element -->
+    <section>
+      <h2>5. Hide / Show Element</h2>
+      <p id="message">Hello! I can be hidden.</p>
+      <button onclick="hideMessage()">Hide</button>
+      <button onclick="showMessage()">Show</button>
+    </section>
+
+    <!-- 6. Counter -->
+    <section>
+      <h2>6. Counter</h2>
+      <h3 id="count">0</h3>
+      <button onclick="increase()">+</button>
+      <button onclick="decrease()">-</button>
+      <button onclick="reset()">Reset</button>
+    </section>
+
+    <!-- 7. localStorage Save -->
+    <section>
+      <h2>7. localStorage - Save Name</h2>
+      <input type="text" id="saveName" placeholder="Enter name" />
+      <button onclick="saveName()">Save</button>
+      <button onclick="getName()">Get Name</button>
+      <button onclick="removeName()">Remove</button>
+      <p id="savedName"></p>
+    </section>
+
+    <!-- 8. localStorage Theme -->
+    <section>
+      <h2>8. localStorage - Save Theme</h2>
+      <button onclick="setDark()">Dark</button>
+      <button onclick="setLight()">Light</button>
+    </section>
+
+    <script src="./js/script.js"></script>
+  </body>
+</html>
